@@ -1,0 +1,802 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #666;
+}
+html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-family: "Nanum Gothic",sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+.uppercase {
+    text-transform: uppercase !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.line {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+}
+.btn {
+    display: inline-block;
+    padding: 23px 30px;
+    border: 3px solid #fff;
+    background-color: transparent;
+    font-family: "Noto Sans KR";
+}
+a.btn {
+    color: #fff;
+    font-weight: 700;
+}
+.btn-white {
+    padding: 20px 30px;
+    background-color: rgba(255,255,255,.8);
+    border-width: 1px;
+}
+
+.parkingWrap {
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.logo.bottom {
+    top:auto;
+    bottom:1.5em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.logo > img {
+    width: 120px;
+    height: auto;
+}
+.txtBox {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    width: 100%;
+    text-align: center;
+}
+.txtBox .title {
+    font-family: 'Open Sans';
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+.txtBox .desc {
+    padding-top: 15px;
+    padding-bottom: 50px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+.parking-sell.sell-type2 .txtBox .desc {
+    padding-bottom: 30px;
+}
+.txtBox .email {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1;
+}
+.txtBox .email,
+.txtBox .email a {
+    font-family: 'Open Sans';
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+}
+
+.txtBox .content {
+    margin: 0 auto;
+    padding: 30px 0 20px;
+    width: 80%;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.txtBox .price {
+    display: inline-block;
+    vertical-align: text-bottom;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 700;
+}
+.txtBox .price .unit {
+    font-family: 굴림, Gulim;
+    font-size: 18px;
+}
+.txtBox .price,
+.txtBox .content,
+.txtBox .count {
+    color: #fff;
+}
+.txtBox .count {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+}
+.txtBox .count .bar {
+    font-size: 12px;
+    vertical-align: text-top;
+    padding: 0 5px;
+}
+.txtBox .count .count-num {
+    font-size: 16px;
+}
+.escrowBox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+}
+/* .icon-circle {
+    display: inline-block;
+    position: absolute;
+    left: -17px;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #40c4ff;
+    border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.icon-circle:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 4px;
+    height: 4px;
+    background: #40c4ff;
+    border-radius: 50%;
+}
+.icon-mail {
+    display: inline-block;
+    width: 17px;
+    height: 12px;
+    background: url(../images/icon_mail.png) 0 0 no-repeat;
+} */
+
+
+/* .season {
+    color: #fff;
+}
+.season .txtBox .content {
+    padding-bottom: 45px;
+}
+.season .txtBox .title {
+    font-size: 40px;
+} */
+.parking1 {
+    background-image: url(../images/parking_1_spring.jpg);
+}
+.parking2 {
+    background-image: url(../images/parking_2_summer.jpg);
+}
+.parking3 {
+    background-image: url(../images/parking_3_fall.jpg);
+}
+.parking3 .txtBox .title,
+.parking3 .txtBox .email,
+.parking3 .txtBox .email a {
+    color: #bf4410;
+}
+.parking3 .txtBox .content,
+.parking3 .txtBox .count {
+    color: #000;
+}
+.parking4 {
+    background-image: url(../images/parking_4_winter.jpg);
+}
+.parking5 {
+    background-image: url(../images/parking_company_1.jpg);
+    color: #3a5665;
+}
+.parking5 .txtBox .title,
+.parking5 .txtBox .email,
+.parking5 .txtBox .email a {
+    color: #3a5665;
+}
+.parking5 .txtBox .content,
+.parking5 .txtBox .count {
+    color: #000;
+}
+.parking6 {
+    background-image: url(../images/parking_company_2.jpg);
+}
+.parking6 .txtBox .title,
+.parking6 .txtBox .email,
+.parking6 .txtBox .email a,
+.parking6 .txtBox .content {
+    color: #4b2b16;
+}
+.parking6 .txtBox .count {
+    color: #000;
+}
+.parking7 {
+    background-image: url(../images/parking_cs_1.gif);
+}
+.parking7 .txtBox {
+    padding: 50px 10px;
+    width: 95%;
+    /* background: #fff url(../images/bg_cs_1.png) center 110px no-repeat;
+    -webkit-background-size: 110px;
+    background-size: 110px; */
+}
+.parking7 .txtBox .title,
+.parking7 .txtBox .email,
+.parking7 .txtBox .email a {
+    color: #444;
+}
+.parking7 .txtBox .content,
+.parking7 .txtBox .count {
+    color: #000;
+}
+.parking8 {
+    background-image: url(../images/parking_cs_2.jpg);
+}
+.parking8 .txtBox .title,
+.parking8 .txtBox .email,
+.parking8 .txtBox .email a {
+    color: #d39be5;
+}
+.parking9 {
+    background-image: url(../images/parking_personal_1.jpg);
+}
+.parking10 {
+    background-image: url(../images/parking_personal_2.jpg);
+    color: #68728b;
+}
+.parking10 .txtBox .title,
+.parking10 .txtBox .email,
+.parking10 .txtBox .email a {
+    color: #0871b3;
+}
+.parking11 {
+    background-image: url(../images/parking_welcome_1.jpg);
+    background-position: bottom center;
+}
+.parking11 .txtBox .title,
+.parking11 .txtBox .email,
+.parking11 .txtBox .email a {
+    color: #444;
+}
+.parking11 .txtBox .content,
+.parking11 .txtBox .count {
+    color: #000;
+}
+.parking12 {
+    background-image: url(../images/parking_welcome_2.gif);
+}
+.parking12 .txtBox .title,
+.parking12 .txtBox .email,
+.parking12 .txtBox .email a {
+    color: #f3aea3;
+}
+.parking12 .txtBox .content,
+.parking12 .txtBox .count {
+    color: #000;
+}
+
+
+.parking7 .txtBox,
+.parking12 .txtBox {
+    width: 95%;
+}
+
+/* .parking13 {
+    background-image: url(../images/parking_sell_01.jpg);
+}
+.parking13 .txtBox .title,
+.parking13 .txtBox .desc,
+.parking13 .txtBox .email,
+.parking13 .txtBox .email a {
+    color: #40c4ff;
+}
+.parking13 .txtBox .price,
+.parking13 .txtBox .content {
+    color: #fff;
+}
+.parking13 .txtBox .title {
+    font-size: 35px;
+    font-weight: 700;
+}
+.parking13 .txtBox .email {
+    position: relative;
+    font-weight: 700;
+}
+.parking13 .escrowBox {
+    margin-bottom: 0;
+    min-height: 60px;
+    line-height: 60px;
+    background-color: rgba(0,0,0,.5);
+}
+
+.parking14 {
+    background-image: url(../images/parking_sell_02.jpg);
+}
+.parking14 .txtBox {
+    top: 40%;
+}
+.parking14 .txtBox .title,
+.parking14 .txtBox .desc {
+    color: #00796b;
+}
+.parking14 .txtBox .content,
+.parking14 .txtBox .email,
+.parking14 .txtBox .email a {
+    color: #5e8883;
+}
+.parking14 .txtBox .title {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.parking14 .txtBox .desc {
+    padding-top: 15px;
+    padding-bottom: 0;
+    font-size: 25px;
+    font-weight: 400;
+}
+.parking14 .txtBox .content {
+    padding: 40px 0 45px 0;
+    font-weight: 400;
+}
+.parking14 .txtBox .email {
+    font-weight: 700;
+}
+.parking14 .txtBox .email .icon-mail {
+    margin-right: 10px;
+}
+.parking14 .escrowBox {
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.parking15 {
+    background-image: url(../images/parking_sell_03.jpg);
+}
+.parking15 .txtBox .title {
+    font-size: 30px;
+    font-weight: 400;
+}
+.parking15 .txtBox .title span {
+    font-weight: 700;
+}
+.parking15 .txtBox .desc {
+    padding-bottom: 15px;
+}
+.parking15 .txtBox .price {
+    margin-top: 10px;
+    display: block;
+}
+.parking15 .txtBox .title,
+.parking15 .txtBox .price {
+    color: #fff;
+}
+.parking15 .txtBox .title span,
+.parking15 .txtBox .desc {
+    color: #ffff00;
+}
+.parking15 .txtBox .content,
+.parking15 .txtBox .email,
+.parking15 .txtBox .email a {
+    color: #cccccc;
+}
+.parking15 .txtBox .email {
+    font-weight: 300;
+}
+.parking15 .escrowBox {
+    color: #7c809b;
+}
+
+.parking16 {
+    background-image: url(../images/parking_sell_04.jpg);
+}
+.parking16 .logo {
+    right: 20px;
+    left: auto;
+}
+.parking16 .line {
+    background-color: #cccccc;
+    margin: 0 auto;
+}
+.parking16 .txtBox {
+    top: 45%;
+}
+.parking16 .txtBox .title {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+.parking16 .txtBox .title span {
+    font-weight: 300;
+    color: #ff0000;
+}
+.parking16 .txtBox .desc {
+    padding-bottom: 10px;
+    color: #fff;
+}
+.parking16 .txtBox .email {
+    font-weight: 700;
+    text-decoration: underline;
+}
+.parking16 .txtBox .content {
+    padding-top: 15px;
+}
+.parking16 .txtBox .content,
+.parking16 .txtBox .email,
+.parking16 .txtBox .email a {
+    color: #999;
+}
+.parking16 .escrowBox span {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: rgba(0,0,0,.2);
+    letter-spacing: -1px;
+} */
+
+.parking-sell .txtBox .title {
+    text-transform: none;
+    font-size: 38px;
+}
+.parking-sell .txtBox .email {
+    margin-top: 0;
+}
+.parking-sell .txtBox .content {
+    padding: 20px 0 10px;
+}
+.parking-sell .escrowBox:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(255,255,255,.1);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    filter: blur(10px);
+}
+.parking-sell .escrowBox {
+    margin-bottom: 0;
+    line-height: 50px;
+    background-color: rgba(0,0,0,.8);
+}
+.parking-sell .escrowBox > span {
+    position: relative;
+}
+.parking-sell .escrowBox a {
+    display: block;
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+.new-parking13 {
+    background-image: url(../images/parking_sell_01.jpg);
+}
+.new-parking13 .txtBox .title,
+.new-parking13 .txtBox .desc,
+.new-parking13 .txtBox .email,
+.new-parking13 .txtBox .email a,
+.new-parking13 .escrowBox a > span {
+    color: #40c4ff;
+}
+
+.new-parking14 {
+    background-image: url(../images/parking_sell_02.jpg);
+}
+.new-parking14 .txtBox .title,
+.new-parking14 .txtBox .desc,
+.new-parking14 .txtBox .email,
+.new-parking14 .txtBox .email a,
+.new-parking14 .escrowBox a > span {
+    color: #1ec0a7;
+}
+.new-parking14 .line {
+    background-color: #1ec0a7;
+}
+.new-parking14 .txtBox .price,
+.new-parking14 .txtBox .content,
+.new-parking14 .txtBox .count {
+    color: #333333;
+}
+
+.sell-type2 .txtBox {
+    width: 80%;
+    text-align: left;
+}
+.sell-type2 .line {
+    margin-bottom: 25px;
+    width: 37px;
+}
+.sell-type2 .txtBox .content {
+    padding: 20px 0;
+    width: 100%;
+}
+.new-parking15 {
+    background-image: url(../images/parking_sell_03.jpg);
+}
+.new-parking15 .txtBox .title,
+.new-parking15 .txtBox .desc,
+.new-parking15 .txtBox .email,
+.new-parking15 .txtBox .email a,
+.new-parking15 .escrowBox a > span {
+    color: #e1ab50;
+}
+.new-parking15 .line {
+    background-color: #e1ab50;
+}
+
+.new-parking16 {
+    background-image: url(../images/parking_sell_04.jpg);
+}
+.new-parking16 .txtBox .title,
+.new-parking16 .txtBox .desc,
+.new-parking16 .txtBox .email,
+.new-parking16 .txtBox .email a,
+.new-parking16 .escrowBox a > span {
+    color: #dabc8a;
+}
+
+.txtBox .bgBd .content {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 18px;
+    }
+    /* .col-sm-6 {
+        float: left;
+        width: 50%;
+    } */
+    .bgBd {
+        border: 3px solid #fff;
+        padding: 10px;
+    }
+    .bgBd .bgOuter {
+        padding: 20px;
+        background-color: #fff;
+    }
+    .bgBd .bgOuter .bgInner {
+        padding: 110px 60px;
+        border: 5px solid #000;
+        background-color: #fff;
+    }
+
+    .logo {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+    .logo > img {
+        width: 100%;
+    }
+    .parking-sell .txtBox .title,
+    .txtBox .title {
+        font-size: 80px;
+    }
+    .txtBox .desc {
+        padding-bottom: 80px;
+        font-size: 30px;
+    }
+    .txtBox .price {
+        font-size: 40px;
+    }
+    .txtBox .price .unit {
+        font-size: 30px;
+    }
+    .txtBox .email {
+        margin-top: 70px;
+        font-size: 22px;
+    }
+    .txtBox .content {
+        padding: 55px 0 20px;
+        width: 60%;
+        font-size: 17px;
+    }
+
+    /* .season .txtBox .title {
+        font-size: 80px;
+    }
+    .season .txtBox .content {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .parking5 .txtBox .content {
+        padding-top: 115px;
+    }
+    .parking6 .txtBox .desc {
+        padding-top: 20px;
+        font-size: 25px;
+    }
+    .parking7 .txtBox {
+        padding: 100px 30px;
+        background-position: center 180px;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .parking7 .txtBox .title {
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+    .parking7 .txtBox .content {
+        width: 50%;
+    }
+    .parking8 .txtBox .title {
+        font-size: 80px;
+        letter-spacing: 5px;
+    }
+    .parking9 .txtBox .content {
+        padding: 100px 0;
+    }
+    .parking10 .txtBox .title {
+        font-size: 90px;
+    }
+    .parking10 .email {
+        font-size: 20px;
+    }
+
+    .parking11 .txtBox .title {
+        font-size: 70px;
+    }
+    .parking11 .txtBox .content {
+        padding: 45px 0;
+    }
+
+    .parking12 .txtBox .title {
+        font-size: 70px;
+    }
+    .parking12 .txtBox .content {
+        padding: 50px 0;
+        width: 90%;
+    }*/
+
+    /* .parking13 .txtBox .title {
+        font-size: 100px;
+    }
+    .parking13 .txtBox .email {
+        font-size: 20px;
+    }
+
+    .parking14 .txtBox {
+        top: 30%;
+    }
+    .parking14 .txtBox .title {
+        font-size: 30px;
+    }
+    .parking14 .txtBox .desc {
+        font-size: 50px;
+    }
+    .parking14 .escrowBox {
+        margin-bottom: 70px;
+    }
+
+    .parking15 .txtBox {
+        width: 80%;
+        text-align: left;
+    }
+    .parking15 .txtBox .title {
+        font-size: 50px;
+    }
+    .parking15 .txtBox .title span {
+        display: block;
+        font-size: 100px;
+    }
+    .parking15 .txtBox .desc {
+        padding-bottom: 50px;
+        font-size: 20px;
+    }
+    .parking15 .txtBox .price {
+        margin-top: 30px;
+    }
+    .parking15 .txtBox .content {
+        padding-top: 0;
+        width: 100%;
+    }
+    .parking15 .escrowBox {
+        margin-bottom: 45px;
+    }
+
+    .parking16 .txtBox .title {
+        font-size: 90px;
+    }
+    .parking16 .txtBox .desc {
+        padding-bottom: 30px;
+    }
+    .parking16 .txtBox .content {
+        padding-top: 30px;
+    }
+    .parking16 .escrowBox {
+        margin-bottom: 80px;
+    } */
+
+    .txtBox {
+        top: 145px;
+    }
+    .sell-type2 .txtBox {
+        top: 200px;
+    }
+    .parking-sell .txtBox .content {
+        padding: 30px 0;
+    }
+    .parking-sell .escrowBox:before {
+        height: 70px;
+    }
+    .parking-sell .escrowBox {
+        font-size: 16px;
+        line-height: 70px;
+    }
+    .sell-type2 .txtBox .content {
+        padding: 35px 0 50px;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    /* .parking15 .txtBox {
+        top: 20em;
+        width: 60%;
+    } */
+    .sell-type2 .txtBox {
+        width: 55%;
+    }
+}
+@media (min-width: 1367px) {
+    .parking7 .txtBox,
+    .parking12 .txtBox {
+        width: 40%;
+    }
+    .txtBox {
+        top: 220px;
+    }
+    .txtBox .desc {
+        padding-top: 15px;
+        padding-bottom: 150px;
+    }
+}
